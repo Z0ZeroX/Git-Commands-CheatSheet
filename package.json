@@ -1,0 +1,37 @@
+{
+  "name": "git-commands-cheatsheet",
+  "version": "1.0.0",
+  "description": "Comprehensive Git command reference documentation",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "pdf:generate": "node scripts/generate-pdf.js",
+    "pdf:install": "npm install puppeteer"
+  },
+  "keywords": [
+    "git",
+    "documentation",
+    "cheatsheet",
+    "reference",
+    "tutorial",
+    "version-control"
+  ],
+  "author": "ZenT",
+  "license": "MIT",
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Z0ZeroX/git-commands-cheatsheet.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Z0ZeroX/git-commands-cheatsheet/issues"
+  },
+  "homepage": "https://Z0ZeroX.github.io/git-commands-cheatsheet/",
+  "dependencies": {
+    "puppeteer": "^24.29.0"
+  }
+}

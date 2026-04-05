@@ -1,0 +1,107 @@
+/* ========================================
+   Breadcrumb Navigation
+   ======================================== */
+.breadcrumb {
+  font-size: 0.875rem;
+  color: var(--vp-c-text-2);
+  margin-bottom: 1.5rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+
+.breadcrumb a {
+  color: var(--vp-c-brand);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  color: var(--vp-c-brand-dark);
+  text-decoration: underline;
+}
+
+.breadcrumb span {
+  color: var(--vp-c-text-1);
+  font-weight: 500;
+}
+
+/* ========================================
+   Custom Footer
+   ======================================== */
+.custom-footer {
+  margin-top: 4rem;
+  padding: 2rem 0;
+  border-top: 1px solid var(--vp-c-divider);
+  text-align: center;
+  color: var(--vp-c-text-2);
+}
+
+.custom-footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.custom-footer-copyright {
+  font-size: 0.875rem;
+}
+
+.custom-footer-tagline {
+  font-size: 0.875rem;
+  color: var(--vp-c-text-3);
+}
+
+.custom-footer-links {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.custom-footer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 6px;
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-1);
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.custom-footer-link:hover {
+  border-color: var(--vp-c-brand);
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand);
+}
+
+/* Mobile responsive */
+@media (max-width: 640px) {
+  .custom-footer-links {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .custom-footer-link {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Dark mode adjustments */
+.dark .custom-footer-link {
+  background: var(--vp-c-bg-elv);
+}
+
+.dark .custom-footer-link:hover {
+  background: var(--vp-c-brand-dimm);
+}
+.page-footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--vp-c-divider);
+  font-size: 0.9rem;
+  color: var(--vp-c-text-2);
+}

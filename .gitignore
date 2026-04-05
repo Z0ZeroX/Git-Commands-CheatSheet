@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build output
+dist/
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+.temp/
+/downloads/
+
+# PDF generation (keep only final PDF in VitePress static folder)
+.puppeteerrc.cjs
+.local-chromium/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+
+# OS
+Thumbs.db

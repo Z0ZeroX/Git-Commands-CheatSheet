@@ -1,0 +1,96 @@
+name: Generate PDF from Quick Reference
+
+on:
+  pull_request:
+    paths:
+      - 'docs/quick-reference.md'
+      - 'docs/quick-reference-print.md'
+      - 'docs/.vitepress/theme/custom.css'
+      - 'scripts/generate-pdf.js'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/generate-pdf.yml'
+    branches:
+      - main
+  push:
+    paths:
+      - 'docs/quick-reference.md'
+      - 'docs/quick-reference-print.md'
+      - 'docs/.vitepress/theme/custom.css'
+      - 'scripts/generate-pdf.js'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/generate-pdf.yml'
+    branches:
+      - main
+  workflow_dispatch: # Allow manual trigger
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pdf-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  generate-pdf:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Generate PDF
+        run: node scripts/generate-pdf.js
+      
+      - name: Upload PDF as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: git-commands-quick-reference-pdf
+          path: docs/public/downloads/git-commands-quick-reference.pdf
+          retention-days: 90
+
+  publish-pdf:
+    needs: generate-pdf
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Download PDF artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: git-commands-quick-reference-pdf
+          path: docs/public/downloads/
+
+      - name: Commit and push PDF
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+          git add docs/public/downloads/git-commands-quick-reference.pdf
+          
+          # Only commit if there are changes
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Auto-generate PDF from quick-reference.md [skip ci]"
+            git push
+          fi

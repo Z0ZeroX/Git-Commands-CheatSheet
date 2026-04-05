@@ -1,0 +1,12 @@
+# Project Maintainers
+# These owners will be the default owners for everything in the repo
+# They will be requested for review when someone opens a pull request
+
+* @Z0ZeroX
+
+# Documentation ownership
+/docs/ @Z0ZeroX
+
+# Configuration files
+/.github/ @Z0ZeroX
+/package.json @Z0ZeroX
