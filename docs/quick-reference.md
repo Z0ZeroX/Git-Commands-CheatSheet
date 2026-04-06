@@ -12,6 +12,10 @@ Fast lookup for common Git commands. For detailed explanations, click on any com
   <a href="./downloads/git-commands-quick-reference.pdf" style="color: var(--vp-c-brand-1); text-decoration: underline; margin-left: 8px;">
     Download this page as PDF
   </a>
+  <span style="margin: 0 8px; color: var(--vp-c-text-2);">•</span>
+  <a href="./downloads/git-cheatsheet-codesnap.png" download style="color: var(--vp-c-brand-1); text-decoration: underline;">
+    Download CodeSnap PNG
+  </a>
 </div>
 
 ---

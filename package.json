@@ -8,7 +8,8 @@
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
     "pdf:generate": "node scripts/generate-pdf.js",
-    "pdf:install": "npm install puppeteer"
+    "pdf:install": "npm install puppeteer",
+    "img:generate": "node scripts/generate-codesnap.js docs/git-cheatsheet.md docs/public/downloads/git-cheatsheet-codesnap.png --theme dark --title \"git-cheatsheet.md\" --strip-fences true"
   },
   "keywords": [
     "git",
@@ -32,6 +33,7 @@
   },
   "homepage": "https://Z0ZeroX.github.io/git-commands-cheatsheet/",
   "dependencies": {
-    "puppeteer": "^24.29.0"
+    "puppeteer": "^24.29.0",
+    "puppeteer-core": "^24.40.0"
   }
 }
