@@ -72,6 +72,12 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Sync with latest main
+        run: |
+          git fetch origin main
+          git checkout main
+          git reset --hard origin/main
+
       - name: Download images artifact
         uses: actions/download-artifact@v4
         with:
@@ -81,6 +87,7 @@ jobs:
       - name: Commit and push images
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
+          branch: main
           commit_message: "chore: auto-generate CodeSnap images from markdown"
           file_pattern: docs/public/downloads/*.png
           skip_fetch: false
