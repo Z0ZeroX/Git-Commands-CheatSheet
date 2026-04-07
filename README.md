@@ -1,10 +1,10 @@
 # Git Commands Cheat Sheet
 
-[![GitHub Pages](https://img.shields.io/badge/docs-GitHub%20Pages-blue)](https://Z0ZeroX.github.io/git-commands-cheatsheet/)
+[![GitHub Pages](https://img.shields.io/badge/docs-GitHub%20Pages-blue)](https://z0zerox.github.io/Git-Commands-CheatSheet/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![Contributing](https://img.shields.io/badge/Contributions-welcome-brightgreen.svg)](./CONTRIBUTING.md)
-[![Issues](https://img.shields.io/badge/Issues-open-orange.svg)](https://github.com/Z0ZeroX/git-commands-cheatsheet/issues)
-[![Contributors](https://img.shields.io/github/contributors/Z0ZeroX/git-commands-cheatsheet?color=brightgreen)](https://github.com/Z0ZeroX/git-commands-cheatsheet/graphs/contributors)
+[![Issues](https://img.shields.io/badge/Issues-open-orange.svg)](https://github.com/Z0ZeroX/Git-Commands-CheatSheet/issues)
+[![Contributors](https://img.shields.io/github/contributors/Z0ZeroX/Git-Commands-CheatSheet?color=brightgreen)](https://github.com/Z0ZeroX/Git-Commands-CheatSheet/graphs/contributors)
 
 A community-maintained Git reference site with command explanations, examples, troubleshooting notes, and a printable quick reference.
 
@@ -61,13 +61,19 @@ Each folder contains focused pages so readers can jump directly to the topic the
 
 ### Read online
 
-Open the live site here: [Z0ZeroX.github.io/git-commands-cheatsheet](https://Z0ZeroX.github.io/git-commands-cheatsheet/)
+Open the live site here: [z0zerox.github.io/Git-Commands-CheatSheet](https://z0zerox.github.io/Git-Commands-CheatSheet/)
+
+Quick links:
+
+- [Quick Reference page](https://z0zerox.github.io/Git-Commands-CheatSheet/quick-reference)
+- [Quick Reference PDF](https://z0zerox.github.io/Git-Commands-CheatSheet/downloads/git-commands-quick-reference.pdf)
+- [CodeSnap PNG](https://z0zerox.github.io/Git-Commands-CheatSheet/downloads/git-cheatsheet-codesnap.png)
 
 ### Run locally
 
 ```bash
-git clone https://github.com/Z0ZeroX/git-commands-cheatsheet.git
-cd git-commands-cheatsheet
+git clone https://github.com/Z0ZeroX/Git-Commands-CheatSheet.git
+cd Git-Commands-CheatSheet
 npm install
 npm run docs:dev
 ```
@@ -82,7 +88,7 @@ npm run docs:build
 
 ### Download the PDF
 
-Use the printable quick reference here: [Git Commands Quick Reference PDF](https://Z0ZeroX.github.io/git-commands-cheatsheet/downloads/git-commands-quick-reference.pdf)
+Use the printable quick reference here: [Git Commands Quick Reference PDF](https://z0zerox.github.io/Git-Commands-CheatSheet/downloads/git-commands-quick-reference.pdf)
 
 ---
 
@@ -131,8 +137,8 @@ Before submitting a pull request:
 
 If this project helps you, a star on GitHub is always appreciated.
 
-- [Report an issue](https://github.com/Z0ZeroX/git-commands-cheatsheet/issues)
-- [Start a discussion](https://github.com/Z0ZeroX/git-commands-cheatsheet/discussions)
+- [Report an issue](https://github.com/Z0ZeroX/Git-Commands-CheatSheet/issues)
+- [Start a discussion](https://github.com/Z0ZeroX/Git-Commands-CheatSheet/discussions)
 - [Read the FAQ](./docs/guides/faq.md)
 
 ---

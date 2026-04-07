@@ -43,7 +43,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Quick Reference', link: '/quick-reference' },
       { text: 'Guides', link: '/guides/' },
-      { text: 'GitHub', link: 'https://github.com/DTan084/Git-Commands-CheatSheet' }
+      { text: 'GitHub', link: 'https://github.com/Z0ZeroX/Git-Commands-CheatSheet' }
     ],
 
     sidebar: [
@@ -133,7 +133,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/Z0ZeroX/git-commands-cheatsheet' }
+      { icon: 'github', link: 'https://github.com/Z0ZeroX/Git-Commands-CheatSheet' }
     ],
 
     footer: {
@@ -170,7 +170,7 @@ export default defineConfig({
     },
 
     editLink: {
-      pattern: 'https://github.com/Z0ZeroX/git-commands-cheatsheet/edit/main/docs/:path',
+      pattern: 'https://github.com/Z0ZeroX/Git-Commands-CheatSheet/edit/main/docs/:path',
       text: 'Edit this page on GitHub'
     },
 

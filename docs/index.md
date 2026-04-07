@@ -65,29 +65,29 @@ This is a community-driven project! We welcome:
 - Translations to other languages
 - Suggestions and feedback
 
-**[Read Contributing Guidelines →](https://github.com/Z0ZeroX/git-commands-cheatsheet/blob/main/CONTRIBUTING.md)**
+**[Read Contributing Guidelines →](https://github.com/Z0ZeroX/Git-Commands-CheatSheet/blob/main/CONTRIBUTING.md)**
 
 ## Project Stats
 
 <div class="stats">
 
-![GitHub stars](https://img.shields.io/github/stars/Z0ZeroX/git-commands-cheatsheet?style=social)
-![GitHub forks](https://img.shields.io/github/forks/Z0ZeroX/git-commands-cheatsheet?style=social)
-![GitHub contributors](https://img.shields.io/github/contributors/Z0ZeroX/git-commands-cheatsheet)
-![Last commit](https://img.shields.io/github/last-commit/Z0ZeroX/git-commands-cheatsheet)
+![GitHub stars](https://img.shields.io/github/stars/Z0ZeroX/Git-Commands-CheatSheet?style=social)
+![GitHub forks](https://img.shields.io/github/forks/Z0ZeroX/Git-Commands-CheatSheet?style=social)
+![GitHub contributors](https://img.shields.io/github/contributors/Z0ZeroX/Git-Commands-CheatSheet)
+![Last commit](https://img.shields.io/github/last-commit/Z0ZeroX/Git-Commands-CheatSheet)
 
 </div>
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/Z0ZeroX/git-commands-cheatsheet/blob/main/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/Z0ZeroX/Git-Commands-CheatSheet/blob/main/LICENSE) file for details.
 
 ## Support
 
 If you find this documentation helpful, please give us a **star** on GitHub!
 
-<a href="https://github.com/Z0ZeroX/git-commands-cheatsheet" target="_blank">
-  <img src="https://img.shields.io/github/stars/Z0ZeroX/git-commands-cheatsheet?style=social" alt="GitHub stars">
+<a href="https://github.com/Z0ZeroX/Git-Commands-CheatSheet" target="_blank">
+  <img src="https://img.shields.io/github/stars/Z0ZeroX/Git-Commands-CheatSheet?style=social" alt="GitHub stars">
 </a>
 
 ---

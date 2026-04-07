@@ -7,15 +7,13 @@ description: Fast lookup for common Git commands
 
 Fast lookup for common Git commands. For detailed explanations, click on any command.
 
-<div style="background: var(--vp-c-bg-soft); padding: 16px 24px; border-radius: 8px; margin: 20px 0; text-align: center;">
-  <strong>Offline Access:</strong>
-  <a href="./downloads/git-commands-quick-reference.pdf" style="color: var(--vp-c-brand-1); text-decoration: underline; margin-left: 8px;">
-    Download this page as PDF
-  </a>
-  <span style="margin: 0 8px; color: var(--vp-c-text-2);">•</span>
-  <a href="./downloads/git-cheatsheet-codesnap.png" download style="color: var(--vp-c-brand-1); text-decoration: underline;">
-    Download CodeSnap PNG
-  </a>
+<div class="quick-ref-hero">
+  <p class="quick-ref-hero-title">Offline Access</p>
+  <p class="quick-ref-hero-subtitle">Sync and download for local use.</p>
+  <div class="quick-ref-actions">
+    <a class="quick-ref-action" href="./downloads/git-commands-quick-reference.pdf">Download as PDF</a>
+    <a class="quick-ref-action" href="./downloads/git-cheatsheet-codesnap.png" download>CodeSnap PNG</a>
+  </div>
 </div>
 
 ---

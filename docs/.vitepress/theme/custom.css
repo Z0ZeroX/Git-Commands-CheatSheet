@@ -105,3 +105,109 @@
   font-size: 0.9rem;
   color: var(--vp-c-text-2);
 }
+
+/* ========================================
+   Quick Reference Page
+   ======================================== */
+.vp-doc[class*='quick-reference'] .quick-ref-hero {
+  position: relative;
+  margin: 1rem 0 1.5rem;
+  padding: 1rem 1rem 0.9rem 4rem;
+  border: 1px solid color-mix(in srgb, var(--vp-c-brand-soft) 28%, var(--vp-c-divider));
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--vp-c-brand-soft) 18%, var(--vp-c-bg-soft));
+}
+
+.vp-doc[class*='quick-reference'] .quick-ref-hero::before {
+  content: '';
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #5d71ff, #6f53ff);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM19 18H6c-2.21 0-4-1.79-4-4 0-2.05 1.53-3.76 3.56-3.97l1.07-.11.5-.95A5.469 5.469 0 0 1 12 6c2.62 0 4.88 1.86 5.39 4.43l.3 1.5 1.53.11A2.98 2.98 0 0 1 22 15c0 1.65-1.35 3-3 3z'/%3E%3Cline x1='3' y1='3' x2='21' y2='21' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM19 18H6c-2.21 0-4-1.79-4-4 0-2.05 1.53-3.76 3.56-3.97l1.07-.11.5-.95A5.469 5.469 0 0 1 12 6c2.62 0 4.88 1.86 5.39 4.43l.3 1.5 1.53.11A2.98 2.98 0 0 1 22 15c0 1.65-1.35 3-3 3z'/%3E%3Cline x1='3' y1='3' x2='21' y2='21' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 65%;
+}
+
+.vp-doc[class*='quick-reference'] .quick-ref-hero-title {
+  margin: 0;
+  font-size: 1.04rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.vp-doc[class*='quick-reference'] .quick-ref-hero-subtitle {
+  margin: 0.28rem 0 0;
+  color: var(--vp-c-text-2);
+  font-size: 0.95rem;
+  line-height: 1.35;
+}
+
+.vp-doc[class*='quick-reference'] .quick-ref-actions {
+  margin-top: 0.85rem;
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.vp-doc[class*='quick-reference'] .quick-ref-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  min-height: 2rem;
+  min-width: 4rem;
+  padding: 0.35rem 0.78rem;
+  border-radius: 9px;
+  border: 1px solid var(--vp-c-divider);
+  background: var(--vp-c-bg);
+  color: var(--vp-c-text-1);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: 0.18s ease;
+}
+
+.vp-doc[class*='quick-reference'] .quick-ref-action::before {
+  content: '';
+  width: 0.82rem;
+  height: 0.82rem;
+  display: inline-block;
+  background: currentColor;
+  opacity: 0.9;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+}
+
+.vp-doc[class*='quick-reference'] .quick-ref-action[href$='.pdf']::before {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 2h9l5 5v15a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm8 1.5V8h4.5L14 3.5zM8 12h8v1.5H8V12zm0 3h8v1.5H8V15zm0-6h3v1.5H8V9z'/%3E%3C/svg%3E");
+}
+
+.vp-doc[class*='quick-reference'] .quick-ref-action[download]::before {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2a1 1 0 0 1 1 1v9.59l2.3-2.3a1 1 0 1 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.42L11 12.59V3a1 1 0 0 1 1-1zM5 18a1 1 0 0 1 1 1v1h12v-1a1 1 0 1 1 2 0v2H3v-2a1 1 0 0 1 1-1z'/%3E%3C/svg%3E");
+}
+
+.vp-doc[class*='quick-reference'] .quick-ref-action:hover {
+  border-color: var(--vp-c-brand-2);
+  background: color-mix(in srgb, var(--vp-c-brand-soft) 45%, var(--vp-c-bg));
+  color: var(--vp-c-brand-2);
+}
+
+.vp-doc[class*='quick-reference'] table td a {
+  text-decoration: none;
+}
+
+.vp-doc[class*='quick-reference'] table td a:hover {
+  background: var(--vp-c-brand-soft);
+  border-color: var(--vp-c-brand-2);
+  color: var(--vp-c-brand-2);
+  text-decoration: none;
+}

@@ -34,7 +34,7 @@ This project adheres to a code of conduct that all contributors are expected to 
 
 ### 1. Reporting Issues
 
-Found a problem? Please [open an issue](https://github.com/Z0ZeroX/git-commands-cheatsheet/issues/new) and include:
+Found a problem? Please [open an issue](https://github.com/Z0ZeroX/Git-Commands-CheatSheet/issues/new) and include:
 
 - A clear, descriptive title
 - Detailed description of the issue
@@ -208,13 +208,13 @@ git checkout -b branch1
 
 2. **Clone your fork**
    ```bash
-   git clone https://github.com/YOUR-USERNAME/git-commands-cheatsheet.git
-   cd git-commands-cheatsheet
+   git clone https://github.com/YOUR-USERNAME/Git-Commands-CheatSheet.git
+   cd Git-Commands-CheatSheet
    ```
 
 3. **Add upstream remote**
    ```bash
-   git remote add upstream https://github.com/Z0ZeroX/git-commands-cheatsheet.git
+   git remote add upstream https://github.com/Z0ZeroX/Git-Commands-CheatSheet.git
    ```
 
 4. **Install dependencies**
@@ -363,8 +363,8 @@ Want to translate the documentation?
 
 If you have any questions:
 
-- [Start a discussion](https://github.com/Z0ZeroX/git-commands-cheatsheet/discussions)
-- [Open an issue](https://github.com/Z0ZeroX/git-commands-cheatsheet/issues)
+- [Start a discussion](https://github.com/Z0ZeroX/Git-Commands-CheatSheet/discussions)
+- [Open an issue](https://github.com/Z0ZeroX/Git-Commands-CheatSheet/issues)
 - Contact maintainers (see README)
 
 ---

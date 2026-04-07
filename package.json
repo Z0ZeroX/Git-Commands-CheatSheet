@@ -26,12 +26,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Z0ZeroX/git-commands-cheatsheet.git"
+    "url": "https://github.com/Z0ZeroX/Git-Commands-CheatSheet.git"
   },
   "bugs": {
-    "url": "https://github.com/Z0ZeroX/git-commands-cheatsheet/issues"
+    "url": "https://github.com/Z0ZeroX/Git-Commands-CheatSheet/issues"
   },
-  "homepage": "https://Z0ZeroX.github.io/git-commands-cheatsheet/",
+  "homepage": "https://z0zerox.github.io/Git-Commands-CheatSheet/",
   "dependencies": {
     "puppeteer": "^24.29.0",
     "puppeteer-core": "^24.40.0"
