@@ -4,21 +4,11 @@ on:
   pull_request:
     paths:
       - 'docs/git-cheatsheet.md'
-      - 'docs/quick-reference.md'
-      - 'scripts/generate-codesnap.js'
-      - 'package.json'
-      - 'package-lock.json'
-      - '.github/workflows/generate-images.yml'
     branches:
       - main
   push:
     paths:
       - 'docs/git-cheatsheet.md'
-      - 'docs/quick-reference.md'
-      - 'scripts/generate-codesnap.js'
-      - 'package.json'
-      - 'package-lock.json'
-      - '.github/workflows/generate-images.yml'
     branches:
       - main
   workflow_dispatch: # Allow manual trigger
@@ -88,7 +78,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           branch: main
-          commit_message: "chore: auto-generate CodeSnap images from markdown"
+          commit_message: "chore: auto-generate CodeSnap images from markdown [skip ci]"
           file_pattern: docs/public/downloads/*.png
           skip_fetch: false
           skip_checkout: false

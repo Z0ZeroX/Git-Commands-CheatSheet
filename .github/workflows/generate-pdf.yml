@@ -3,24 +3,12 @@ name: Generate PDF from Quick Reference
 on:
   pull_request:
     paths:
-      - 'docs/quick-reference.md'
       - 'docs/quick-reference-print.md'
-      - 'docs/.vitepress/theme/custom.css'
-      - 'scripts/generate-pdf.js'
-      - 'package.json'
-      - 'package-lock.json'
-      - '.github/workflows/generate-pdf.yml'
     branches:
       - main
   push:
     paths:
-      - 'docs/quick-reference.md'
       - 'docs/quick-reference-print.md'
-      - 'docs/.vitepress/theme/custom.css'
-      - 'scripts/generate-pdf.js'
-      - 'package.json'
-      - 'package-lock.json'
-      - '.github/workflows/generate-pdf.yml'
     branches:
       - main
   workflow_dispatch: # Allow manual trigger
@@ -91,6 +79,18 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Auto-generate PDF from quick-reference.md [skip ci]"
+            git commit -m "Auto-generate PDF from quick-reference-print.md [skip ci]"
+            git push
+          fi
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+          git add docs/public/downloads/git-commands-quick-reference.pdf
+          
+          # Only commit if there are changes
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Auto-generate PDF from quick-reference-print.md [skip ci]"
             git push
           fi
